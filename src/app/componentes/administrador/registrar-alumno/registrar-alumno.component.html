@@ -11,71 +11,59 @@
                 <div class="row ">
                     <p class="">Datos del estudiante</p>
                     <div class="col-sm">
-                        <input type="text" class="form-control" placeholder="Registre el codigo">
+                        <input type="text" class="form-control" [(ngModel)]="this.alumnoAux.codigoA" placeholder="Registre el codigo">
                     </div>
                     <div class="col-sm">
-                        <input type="text" class="form-control" placeholder="Registre el usuario">
+                        <input type="text" class="form-control" [(ngModel)]="this.alumnoAux.usuario" placeholder="Registre el usuario">
                     </div>
                     <div class="col-sm">
-                        <input type="text" class="form-control" placeholder="Registre la contraseña">
+                        <input type="text" class="form-control" [(ngModel)]="this.alumnoAux.contrasenia" placeholder="Registre la contraseña">
                     </div>
                     <div class="col-sm">
-                        <input type="text" class="form-control" placeholder="Registre Dni">
+                        <input type="text" class="form-control" [(ngModel)]="this.alumnoAux.dni" placeholder="Registre Dni">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <input type="text" class="form-control" [(ngModel)]="this.alumnoAux.nombre" placeholder="Registre el nombre">
+                    </div>
+                    <div class="col-sm">
+                        <input type="text" class="form-control"[(ngModel)]="this.alumnoAux.apellidoP" placeholder="Registre el Apellido Paterno">
+                    </div>
+                    <div class="col-sm">
+                        <input type="text" class="form-control" [(ngModel)]="this.alumnoAux.apellidoM" placeholder="Registre el Apellido Materno">
+                    </div>
+                    <div class="col-sm">
+                        <input type="text" class="form-control" [(ngModel)]="this.alumnoAux.fechaNacimiento" placeholder="Registre la fecha de nacimiento">
                     </div>
                     
                 </div>
                 <div class="row">
-                    <div class="col-sm">
-                        <input type="text" class="form-control" placeholder="Registre el nombre">
-                    </div>
-                    <div class="col-sm">
-                        <input type="text" class="form-control" placeholder="Registre el Apellido Paterno">
-                    </div>
-                    <div class="col-sm">
-                        <input type="text" class="form-control" placeholder="Registre el Apellido Materno">
-                    </div>
-                    <div class="col-sm">
-                        <input type="text" class="form-control" placeholder="Registre la fecha de nacimiento">
-                    </div>
-                    
-                </div>
-                <div class="row">
                     
                     <div class="col-sm">
-                        <input type="text" class="form-control" placeholder="Registre el sexo del estudiante">
+                        <input type="text" class="form-control" [(ngModel)]="this.alumnoAux.sexo" placeholder="Registre el sexo del estudiante">
                     </div>
                     <div class="col-sm">
-                        <input type="text" class="form-control" placeholder="Registre la direccion del estudiante">
+                        <input type="text" class="form-control" [(ngModel)]="this.alumnoAux.direccion" placeholder="Registre la direccion del estudiante">
                     </div>
                     
-                </div>
-                <div class="row">
-                    <p class="">Datos del Tutor</p>
-                    <div class="col-sm">
-                        <input type="text" class="form-control" placeholder="Registre el Apellido Paterno del tutor/a">
-                    </div>
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Registre el Apellido Materno del tutor/a">
-                    </div>
-                    <div class="col-sm">
-                        <input type="text" class="form-control" placeholder="Registre el nombre del tutor/a">
-                    </div>
                 </div>
             </form>
+            <p><button >REGISTRAR</button></p>
         </div>
-
+<!-- aqui va la vista -->
         <div class="container-fluid col-sm col-11 p-0">
             <h2>Aqui va el registro</h2>
             <table class="table table-sm ">
                 <thead>
                     <tr>
-                        <th scope="col">codAlumno</th>
-                        <th scope="col">NombreAlumno</th>
-                        <th scope="col">ApellidoPaterno</th>
-                        <th scope="col">ApellidoMaterno</th>
-                        <th scope="col">Sexo</th>
-                        <th scope="col">FechaNaci</th>
-                        <th scope="col">Direccion</th>
+                        <th scope="col"></th>
+                        <th scope="col"><th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
                     
                     </tr>
                 </thead>
