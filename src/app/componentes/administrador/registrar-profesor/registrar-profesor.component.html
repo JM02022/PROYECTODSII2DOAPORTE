@@ -1,133 +1,129 @@
-<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 <div class="row m-0">
-  <div class="col-1 p-0">
-    <app-sidebar></app-sidebar>
-  </div>
-  <div class="col-11 p-0">
-    <figure class="text-center">
-      <blockquote class="blockquote">
-        <h1 class="text-black ">Colegio Jesus Andres Lujan</h1>
-      </blockquote>
-    </figure>
-
-    <div class="text-center">
-        <img src="https://image.spreadshirtmedia.net/image-server/v1/compositions/T56A2PA4115PT17X65Y27D178174561S100/views/1,
-        width=500,height=500,appearanceId=2/san-cuchito-1-bolsa-de-tela.jpg" class="rounded-circle" width="120" height="150px" alt="...">
+    <div class="col-1 p-0">
+      <app-sidebar></app-sidebar>
     </div>
-
-    <figure>
+    <div class="col-11 p-0">
+      <figure class="text-center">
         <blockquote class="blockquote">
-          <h2 class="text-white text-center" >Docentes Registrados</h2>
+          <h1 class="text-black ">Colegio Jesus Andres Lujan</h1>
         </blockquote>
-    </figure>
-    
-    <div class="container">
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">Codigo</th>
-            <th scope="col">Nombre</th>
-            <th scope="col">Apellido Paterno</th>
-            <th scope="col">Apellido Materno</th>
-            <th scope="col">Celular</th>
-            <th scope="col">Acciones</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let elementos of listaDocentes; index as i">
-            <td>{{ elementos.codigoD }}</td>
-            <td>{{ elementos.nombre }}</td>
-            <td>{{ elementos.apellidoM }}</td>
-            <td>{{ elementos.apellidoP }}</td>
-            <td>{{ elementos.celular }}</td>
-            <td><button type="button" class="btn btn-outline-danger btn-lg" ><i class="bi bi-trash3-fill"></i></button></td>
-             <td><button type="button" class="btn btn-outline-primary btn-lg" ><i class="bi bi-pencil-square"></i></button></td>  
-            <td><button type="button" class="btn btn-warning"><i class="bi bi-person-plus-fill"></i></button></td> -->
-          <!-- </tr>
-        </tbody>
-      </table>
+      </figure>
+  
+      <div class="text-center">
+          <img src="https://image.spreadshirtmedia.net/image-server/v1/compositions/T56A2PA4115PT17X65Y27D178174561S100/views/1,
+          width=500,height=500,appearanceId=2/san-cuchito-1-bolsa-de-tela.jpg" class="rounded-circle" width="120" height="150px" alt="...">
       </div>
-
-
-    <figure>
-      <blockquote class="blockquote">
-        <h2 class="bg-dark text-white ">
-          <p  class="text-center">Datos Docente</p>
-        </h2>
-      </blockquote>
-    </figure>
-    <div class="container">
-    <div class="row g-3 needs-validation" novalidate>
-      <div class="col-md-4">
-        <label for="validationCustom01" class="form-label">Nombres docente</label>
-        <input type="text" class="form-control" id="validationCustom01"  >
-        <div class="valid-feedback">
-          Completar
+  
+      <figure>
+          <blockquote class="blockquote">
+            <h2 class="text-white text-center" >Docentes Registrados</h2>
+          </blockquote>
+      </figure>
+      
+      <div class="container">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Codigo</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">Apellido Paterno</th>
+              <th scope="col">Apellido Materno</th>
+              <th scope="col">Celular</th>
+              <th scope="col">Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let elementos of listaDocentes; index as i">
+              <td>{{ elementos.codigoD }}</td>
+              <td>{{ elementos.nombre }}</td>
+              <td>{{ elementos.apellidoM }}</td>
+              <td>{{ elementos.apellidoP }}</td>
+              <td>{{ elementos.celular }}</td>
+              <td><button type="button" class="btn btn-outline-danger btn-lg" ><i class="bi bi-trash3-fill"></i></button></td>
+              <!-- <td><button type="button" class="btn btn-outline-primary btn-lg" ><i class="bi bi-pencil-square"></i></button></td>  
+              <td><button type="button" class="btn btn-warning"><i class="bi bi-person-plus-fill"></i></button></td> -->
+            </tr>
+          </tbody>
+        </table>
         </div>
-      </div>
-      <div class="col-md-4">
-        <label for="validationCustom02" class="form-label">Apellidos del Docente</label>
-        <input type="text" class="form-control" id="validationCustom02" >
-        <div class="valid-feedback">
-          Completar
+  
+  
+      <figure>
+        <blockquote class="blockquote">
+          <h2 class="bg-dark text-white ">
+            <p  class="text-center">Datos Docente</p>
+          </h2>
+        </blockquote>
+      </figure>
+      <div class="container">
+      <div class="row g-3 needs-validation" novalidate>
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">Nombre Docente</label>
+          <input type="text" class="form-control" id="validationCustom01"  required [(ngModel)]="this.docenteAux.nombre">
+          <div class="valid-feedback">
+            Completar
+          </div>
         </div>
-      </div>
-      <div class="col-md-4">
-        <label for="validationCustomUsername" class="form-label">Correo Electronico</label>
-        <div class="input-group has-validation">
-          <span class="input-group-text" id="inputGroupPrepend">@</span>
-          <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" >
+        <div class="col-md-4">
+          <label for="validationCustom02" class="form-label">Apellidos paterno</label>
+          <input type="text" class="form-control" id="validationCustom02" required [(ngModel)]="this.docenteAux.apellidoP">
+          <div class="valid-feedback">
+            Completar
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustomUsername" class="form-label">Correo Electronico</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend">@</span>
+            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required [(ngModel)]="this.docenteAux.correo">
+            <div class="invalid-feedback">
+              Completar
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="validationCustom03" class="form-label">Codigo del Docente</label>
+          <input type="text" class="form-control" id="validationCustom03" required [(ngModel)]="this.docenteAux.codigoD">
           <div class="invalid-feedback">
             Completar
           </div>
         </div>
-      </div>
-      <div class="col-md-3">
-        <label for="validationCustom03" class="form-label">Codigo del Docente</label>
-        <input type="text" class="form-control" id="validationCustom03" >
-        <div class="invalid-feedback">
-          Completar
+        <div class="col-md-3">
+          <label for="validationCustom04" class="form-label">Especialidad</label>
+          <select class="form-select" id="validationCustom04" required [(ngModel)]="this.docenteAux.especialidad">
+            <option>Matematicas</option>
+            <option>Historia</option>
+            <option>Comunicacion</option>
+            <option>Fisica</option>
+            <option>Biologia</option>
+          </select>
+          <div class="invalid-feedback">
+            Please select a valid state.
+          </div>
         </div>
-      </div>
-      <div class="col-md-3">
-        <label for="validationCustom04" class="form-label">Especialidad</label>
-        <select class="form-select" id="validationCustom04" required [(ngModel)]="docenteAux.especialidad">
-          <option>Matematicas</option>
-          <option>Historia</option>
-          <option>Comunicacion</option>
-          <option>Fisica</option>
-          <option>Biologia</option>
-
-        </select>
-        <div class="invalid-feedback">
-          Please select a valid state.
+        <div class="col-md-3">
+          <label for="validationCustom05" class="form-label">Celular</label>
+          <input type="number" class="form-control" id="validationCustom05" required [(ngModel)]="this.docenteAux.celular">
+          <div class="invalid-feedback">
+            Completar
+          </div>
         </div>
-      </div>
-      <div class="col-md-3">
-        <label for="validationCustom05" class="form-label">Celular</label>
-       <input type="number" class="form-control" id="validationCustom05" required [(ngModel)]="docenteAux.celular"> -->
-        <!-- <input type="number" class="form-control" id="validationCustom05" required [(ngModel)]="alumno.edad"> -->
-        <!-- <div class="invalid-feedback">
-          Completar
+        <div class="col-md-3">
+          <label for="validationCustom05" class="form-label">Direccion</label>
+          <input type="text" class="form-control" id="validationCustom05" >
+          <div class="invalid-feedback">
+            Completar
+          </div>
         </div>
-      </div>
-      <div class="col-md-3">
-        <label for="validationCustom05" class="form-label">Direcciòn</label>
-        <input type="text" class="form-control" id="validationCustom05" > -->
-        <!-- <input type="text" class="form-control" id="validationCustom05" required [(ngModel)]="alumno.fechaN"> -->
-        <!-- <div class="invalid-feedback">
-          Completar
+        <div class="col-12">
+          <div class="col-12">
+            <button type="button" class="btn btn-primary" (click)="RegistrarDocente()">Registrar</button>
+          </div>
         </div>
+      </div> 
+  
       </div>
-      <div class="col-12">
-        <div class="col-12"> -->
-          <!-- <button type="button" class="btn btn-primary" (click)="onAgregar()">Resgistrar</button> -->
-          <!-- <button type="button" class="btn btn-primary text-center"(click)="onAgregar()">Registrar</button> -->
-        <!-- </div>
-      </div>
-    </div> 
-
+      
     </div>
-    
-  </div> -->
-
+  

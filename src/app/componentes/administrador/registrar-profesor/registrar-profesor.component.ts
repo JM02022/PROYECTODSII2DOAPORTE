@@ -15,26 +15,26 @@ export class RegistrarProfesorComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  // listaDocentes:Docente[] = docentes;
-  
-  
-  // docenteVacio():Docente{
-  //   return{
-  //     codigoD:"",
-  //     usuario: "",
-  //     contrasenia: "",
-  //     nombre:"",
-  //     especialidad:"",
-  //     apellidoP: "",
-  //     apellidoM: "",
-  //     celular: "",
-  //     correo:"",
-  //   }
-  // }
+  listaDocentes: Docente[] = docentes;
 
-  // docenteAux=this.docenteVacio();
+  docenteVacio():Docente{
+    return{
+      codigoD:"",
+      usuario: "",
+      contrasenia: "",
+      nombre:"",
+      especialidad:"",
+      apellidoP: "",
+      apellidoM: "",
+      celular: "",
+      correo:"",
+    }
+  }
 
-  // registrar(fomr: Form){
-    
-  // }
+  docenteAux=this.docenteVacio();
+
+  RegistrarDocente():void{
+    this.listaDocentes.push(this.docenteAux);
+    this.docenteAux=this.docenteVacio();
+  }
 }

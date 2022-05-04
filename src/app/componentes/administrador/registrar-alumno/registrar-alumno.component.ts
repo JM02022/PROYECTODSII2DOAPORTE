@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Form, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Alumno } from 'src/app/interfaces/alumno';
 import { alumnos } from 'src/app/interfaces/baseDatos';
+import { ServiceAlumnoService } from 'src/app/services/alumnos/service-alumno.service';
 
 @Component({
   selector: 'app-registrar-alumno',
@@ -9,15 +10,14 @@ import { alumnos } from 'src/app/interfaces/baseDatos';
   styleUrls: ['./registrar-alumno.component.css']
 })
 export class RegistrarAlumnoComponent implements OnInit {
-
-  constructor() { }
-
+  alumnos: Alumno[] = alumnos;
+  constructor(private service:ServiceAlumnoService) { 
+    this.alumnos  = service.getDatosAlumnos();
+  }
   ngOnInit(): void {
   }
-  alumnos: Alumno[] = alumnos;
+  
   //public alumnos: Alumno[] = [];
-
-  alumnoAux = this.AlumnoVacio()
 
   AlumnoVacio(): Alumno {
     return {
@@ -33,8 +33,11 @@ export class RegistrarAlumnoComponent implements OnInit {
       direccion:""
       }
   };
+  alumnoAux = this.AlumnoVacio();
   registrar():void{
-    this.alumnos.push(this.alumnoAux);
+    
+  
+    this.service.registrarAlumno(this.alumnoAux);
     this.alumnoAux=this.AlumnoVacio();
   }
   // onDatos(): void {

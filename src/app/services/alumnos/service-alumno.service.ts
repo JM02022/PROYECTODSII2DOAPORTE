@@ -20,4 +20,10 @@ export class ServiceAlumnoService {
   guardarNota(i:number,total:number){
     this.Alumnos[i].nota = total;
   }
+  registrarNotaAlumno(NuevoAlumno:Alumno){
+    this.Alumnos.push(NuevoAlumno);
+  }
+  registrarAlumno(NuevoAlumno:Alumno){
+    this.Alumnos.push(NuevoAlumno);
+  }
 }
