@@ -1,0 +1,99 @@
+<nav class="main-menu">
+    <ul class="nav-prin">
+        <li class="has-subnav nav-nombre-salir">
+            <div class="d-flex align-items-center ps-1 pt-2 pb-2">
+                <div class="flex-shrink-0">
+                    <img src="/assets/student2.png" alt="perfil" class="img-fluid img-thumbnail rounded-circle logoEst">
+                </div>
+                <div class="flex-grow-1 ms-3 nombre">
+                    <span>
+                        Hola: {{alumno.nombre}}
+                    </span>
+                </div>
+            </div>
+        </li>
+        <li class="mt-2">
+            <a routerLink="/perfil" routerLinkActive="active">
+                <div class="pt-2 pb-2">
+                    <i class="fa-solid fa-user fa-2xl"></i>
+                    <span class="nav-text ps-2">
+                        Perfil
+                    </span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a routerLink="/registrar-asistencia" routerLinkActive="active" >
+                <div class="pt-2 pb-2">
+                    <i class="fa-solid fa-laptop fa-2x"></i>
+                    <span class="nav-text ps-2">
+                        Asistencia
+                    </span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a routerLink="/registrar-curso" routerLinkActive="active">
+                <div class="pt-2 pb-2">
+                    <i class="fa-solid fa-list fa-2x"></i>
+                    <span class="nav-text ps-2">
+                        Cursos
+                    </span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a routerLink="/registrar-nota" routerLinkActive="active">
+                <div class="pt-2 pb-2">
+                    <i class="fa-solid fa-folder-open fa-2x"></i>
+                    <span class="nav-text ps-2">
+                        Notas
+                    </span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a routerLink="/registrar-alumno" routerLinkActive="active">
+                <div class="pt-2 pb-2">
+                    <i class="fa-solid fa-table fa-2x"></i>
+                    <span class="nav-text ps-2">
+                        Registrar Alumno
+                    </span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a routerLink="/registrar-profesor" routerLinkActive="active">
+                <div class="pt-2 pb-2">
+                    <i class="fa-solid fa-chalkboard-user fa-2x"></i>
+                    <span class="nav-text ps-2">
+                        Registrar profesor
+                    </span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="pt-2 pb-2">
+                    <i class="fa-solid fa-info fa-2x"></i>
+                    <span class="nav-text ps-2">
+                        Noticias
+                    </span>
+                </div>
+            </a>
+        </li>
+
+    </ul>
+    <ul class="logout nav-nombre-salir mt-5">
+        <li>
+            <a routerLink="/login">
+                <div class="pt-2 pb-2">
+                    <i class="fa-solid fa-power-off fa-2x"></i>
+                    <span class="nav-text ps-2">
+                        Salir
+                    </span>
+                </div>
+            </a>
+        </li>
+    </ul>
+</nav>

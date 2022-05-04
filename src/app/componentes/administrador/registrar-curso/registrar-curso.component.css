@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+.card-body{
+    backdrop-filter: blur(20px);    
+}
+.card-title{
+    font-size: 2em;
+    font-family: 'Quicksand', sans-serif;
+}
+.card-text{
+    font-family: 'Open Sans', sans-serif;
+}
+.col .card img {
+  max-width: 800px;
+  max-height:250px
+}

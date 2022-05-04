@@ -1,0 +1,25 @@
+<div class="login">
+    <div class="login-screen">
+        <div class="app-title">
+            <img src="/assets/students.png" alt="" width="250px">
+        </div>
+        <br>
+        <form [formGroup]="login" (ngSubmit)="validar(login.value)">
+            <div class="login-form">
+                <div class="control-group">
+                    <input type="text" class="login-field" value="" placeholder="Usuario" id="login-name"
+                        formControlName="usuario">
+                    <label class="login-field-icon fui-user" for="login-name"></label>
+                </div>
+                <div class="control-group">
+                    <input type="password" class="login-field" value="" placeholder="Contraseña" id="login-pass"
+                        formControlName="contrasenia">
+                    <label class="login-field-icon fui-lock" for="login-pass"></label>
+                </div>
+                <button type="submit" class="btn btn-primary btn-large btn-block" value="log in">Ingresar</button>
+                <a class="login-link" href="#">Olvidaste la contraseña?</a>
+                <strong *ngIf="DatosCorrectos == true">Datos incorrectos</strong>
+            </div>
+        </form>
+    </div>
+</div>

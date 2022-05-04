@@ -1,0 +1,47 @@
+.titulo{
+    font-family: 'Poppins', sans-serif;
+}
+.row{
+    backdrop-filter: blur(20px);
+}
+.table{
+    background-color: #B1AFB1;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    
+}
+p{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+th{
+    color:white;
+}
+.btn{
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    color:white;
+    background-color: #81B214;
+    border-color: transparent;
+}
+.btn-warning{
+    background-color: #FFCC29;
+    margin-right:10px;
+}
+.btn-danger{
+    background-color: #F58634;
+}
+label{
+    font-size: 20px;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+.form-control{
+    font-size: 20px;
+    font-weight:thin;
+    font-family: 'Montserrat', sans-serif;
+}

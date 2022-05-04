@@ -1,0 +1,336 @@
+<div class="row m-0">
+    <div class="col-1 p-0">
+        <app-sidebar></app-sidebar>
+    </div>
+    <div class="col-11 p-1">
+    
+<!-- <div class="container mt-4 mb-4 p-3 d-flex justify-content-center">
+    <div class="card p-4">
+        <div class=" image d-flex flex-column justify-content-center align-items-center">
+            <button class="btn btn-secondary">
+                <img src="https://i.imgur.com/wvxPV9S.png" height="100" width="100" />
+            </button>
+            <span class="name mt-3">Eleanor Pena</span>
+            <span class="idd">@eleanorpena</span>
+            <div class="d-flex flex-row justify-content-center align-items-center gap-2">
+                <span class="idd1">Oxc4c16a645_b21a</span>
+                <span><i class="fa fa-copy"></i></span>
+            </div>
+            <div class="d-flex flex-row justify-content-center align-items-center mt-3">
+                <span class="number">1069 <span class="follow">Followers</span>
+                </span>
+            </div>
+            <div class=" d-flex mt-2">
+                <button class="btn1 btn-dark">Edit Profile</button>
+            </div>
+            <div class="text mt-3"> <span>Eleanor Pena is a creator of minimalistic x bold graphics and digital
+                    artwork.<br><br> Artist/ Creative Director by Day #NFT minting@ with FND night. </span> </div>
+            <div class="gap-3 mt-3 icons d-flex flex-row justify-content-center align-items-center"> <span><i
+                        class="fa fa-twitter"></i></span> <span><i class="fa fa-facebook-f"></i></span> <span><i
+                        class="fa fa-instagram"></i></span> <span><i class="fa fa-linkedin"></i></span> </div>
+            <div class=" px-2 rounded mt-4 date "> <span class="join">Joined May,2021</span> </div>
+        </div>
+    </div>
+</div> -->
+
+
+
+<!-- <div class="container-fluid">
+    <div class="m-3">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="perfil-col shadow my-3 px-3 py-1">
+                    <img src="../../assets/cuchito.jpg" class="img-fluid rounded mx-auto d-block mt-3" alt="cuchito">
+                    <h2 class="text-center mt-3">Shande Puma Puma Pantoja</h2>
+                    <div class="d-flex flex-column align-items-center mt-4">
+                        <div>
+                            <h5 class="m-0">Correo Electronico:</h5>
+                        </div>
+                        <div>
+                            <p>gmail@gmail.com</p>
+                        </div>
+                        <div>
+                            <h5 class="m-0">Ciudad:</h5>
+                        </div>
+                        <div>
+                            <p>Cusco</p>
+                        </div>
+                        <div>
+                            <h5 class="m-0">Pais:</h5>
+                        </div>
+                        <div>
+                            <p>Perú</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="perfil-col shadow my-3 px-3 py-1">
+                    <div class="d-flex flex-column m-4">
+                        <h1>SOBRE MI</h1>
+                        <div>
+                            <h5 class="m-0">Código:</h5>
+                        </div>
+                        <div>
+                            <p>0191019313k</p>
+                        </div>
+                        <div>
+                            <h5 class="m-0">Grado:</h5>
+                        </div>
+                        <div>
+                            <p>5to secundaria</p>
+                        </div>
+                        <div>
+                            <h5 class="m-0">Turno:</h5>
+                        </div>
+                        <div>
+                            <p>Mañana</p>
+                        </div>
+                        <div>
+                            <h5 class="m-0">Fecha de nacimiento:</h5>
+                        </div>
+                        <div>
+                            <p>20-10-1990</p>
+                        </div>
+                        <div>
+                            <h5 class="m-0">Género:</h5>
+                        </div>
+                        <div>
+                            <p>Hombre</p>
+                        </div>
+                        <div>
+                            <h5 class="m-0">Celular:</h5>
+                        </div>
+                        <div>
+                            <p>982346367</p>
+                        </div>
+                        <div><button class="my-3">Editar perfil</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+<div class="container bootdey flex-grow-1 container-p-y">
+
+            <div class="media align-items-center py-3 mb-3">
+              <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="d-block ui-w-100 rounded-circle">
+              <div class="media-body ml-4">
+                <h4 class="font-weight-bold mb-0">Nombre Alumno: {{getNombre()}}</h4>
+                <div class="text-muted mb-2">Codigo De Alumno: {{alumno.codigoA}} </div>
+                <a href="javascript:void(0)" class="btn btn-primary btn-sm">Editar</a>&nbsp;
+                <a href="javascript:void(0)" class="btn btn-default btn-sm">Perfil</a>&nbsp;
+                <a href="javascript:void(0)" class="btn btn-default btn-sm icon-btn"><i class="fa fa-mail"></i></a>
+              </div>
+            </div>
+
+            <div class="card mb-4">
+              <div class="card-body">
+                <table class="table user-view-table m-0">
+                  <tbody>
+                    <tr>
+    <!-- codigoA: "",
+    usuario:"",
+    contrasenia:"",
+    nombre: "",
+    apellidoP: "",
+    apellidoM:"",
+    dni:"",
+    sexo:"",
+    fechaNacimiento:"",
+    direccion:"" -->
+                      <td>DNI Alumno:</td>
+                      <td>{{alumno.dni}} </td>
+                    </tr>
+                    <tr>
+                      <td>Sexo ALumno:</td>
+                      <td>{{alumno.sexo}} </td>
+                    </tr>
+                    <tr>
+                      <td>Fecha Nacimiento:</td>
+                      <td>{{alumno.fechaNacimiento}} </td>
+                    </tr>
+                    <tr>
+                      <td>Direccion:</td>
+                      <td>{{alumno.direccion}} </td>
+                    </tr>
+                    <tr>
+                      <td>Rol:</td>
+                      <td>Estudiante</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <hr class="border-light m-0">
+              <div class="table-responsive">
+                <table class="table card-table m-0">
+                  <tbody>
+                    <tr>
+                      <th>Dias</th>
+                      <th>lunes</th>
+                      <th>Martes</th>
+                      <th>Miercoles</th>
+                      <th>Jueves</th>
+                      <th>Viernes</th>
+                    </tr>
+                    <tr>
+                      <td>7:00-9:00 am</td>
+                      <td><span class="fa fa-check text-primary"></span></td>
+                      <td><span class="fa fa-times text-light"></span></td>
+                      <td><span class="fa fa-times text-light"></span></td>
+                      <td><span class="fa fa-times text-light"></span></td>
+                      <td><span class="fa fa-times text-light"></span></td>
+                    </tr>
+                    <tr>
+                      <td>9:00-11:00 am</td>
+                      <td><span class="fa fa-check text-primary"></span></td>
+                      <td><span class="fa fa-check text-primary"></span></td>
+                      <td><span class="fa fa-check text-primary"></span></td>
+                      <td><span class="fa fa-times text-light"></span></td>
+                      <td><span class="fa fa-times text-light"></span></td>
+                    </tr>
+                    <tr>
+                      <td>11:00-13:00 am</td>
+                      <td><span class="fa fa-times text-light"></span></td>
+                      <td><span class="fa fa-times text-light"></span></td>
+                      <td><span class="fa fa-times text-light"></span></td>
+                      <td><span class="fa fa-times text-light"></span></td>
+                      <td><span class="fa fa-times text-light"></span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- <div class="card">
+              <div class="row no-gutters row-bordered">
+                <div class="d-flex col-md align-items-center">
+                  <a href="javascript:void(0)" class="card-body d-block text-body">
+                    <div class="text-muted small line-height-1">Posts</div>
+                    <div class="text-xlarge">125</div>
+                  </a>
+                </div>
+                <div class="d-flex col-md align-items-center">
+                  <a href="javascript:void(0)" class="card-body d-block text-body">
+                    <div class="text-muted small line-height-1">Followers</div>
+                    <div class="text-xlarge">534</div>
+                  </a>
+                </div>
+                <div class="d-flex col-md align-items-center">
+                  <a href="javascript:void(0)" class="card-body d-block text-body">
+                    <div class="text-muted small line-height-1">Following</div>
+                    <div class="text-xlarge">236</div>
+                  </a>
+                </div>
+              </div>
+              <hr class="border-light m-0">
+              <div class="card-body">
+
+                <table class="table user-view-table m-0">
+                  <tbody>
+                    <tr>
+                      <td>Username:</td>
+                      <td>nmaxwell</td>
+                    </tr>
+                    <tr>
+                      <td>Name:</td>
+                      <td>Nelle Maxwell</td>
+                    </tr>
+                    <tr>
+                      <td>E-mail:</td>
+                      <td>nmaxwell@mail.com</td>
+                    </tr>
+                    <tr>
+                      <td>Company:</td>
+                      <td>Company Ltd.</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <h6 class="mt-4 mb-3">Social links</h6>
+
+                <table class="table user-view-table m-0">
+                  <tbody>
+                    <tr>
+                      <td>Twitter:</td>
+                      <td><a href="javascript:void(0)">https://twitter.com/user</a></td>
+                    </tr>
+                    <tr>
+                      <td>Facebook:</td>
+                      <td><a href="javascript:void(0)">https://www.facebook.com/user</a></td>
+                    </tr>
+                    <tr>
+                      <td>Instagram:</td>
+                      <td><a href="javascript:void(0)">https://www.instagram.com/user</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <h6 class="mt-4 mb-3">Personal info</h6>
+
+                <table class="table user-view-table m-0">
+                  <tbody>
+                    <tr>
+                      <td>Birthday:</td>
+                      <td>May 3, 1995</td>
+                    </tr>
+                    <tr>
+                      <td>Country:</td>
+                      <td>Canada</td>
+                    </tr>
+                    <tr>
+                      <td>Languages:</td>
+                      <td>English</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <h6 class="mt-4 mb-3">Contacts</h6>
+
+                <table class="table user-view-table m-0">
+                  <tbody>
+                    <tr>
+                      <td>Phone:</td>
+                      <td>+0 (123) 456 7891</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <h6 class="mt-4 mb-3">Interests</h6>
+
+                <table class="table user-view-table m-0">
+                  <tbody>
+                    <tr>
+                      <td>Favorite music:</td>
+                      <td>
+                        Rock,
+                        Alternative,
+                        Electro,
+                        Drum &amp; Bass,
+                        Dance
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Favorite movies:</td>
+                      <td>
+                        The Green Mile,
+                        Pulp Fiction,
+                        Back to the Future,
+                        WALL·E,
+                        Django Unchained,
+                        The Truman Show,
+                        Home Alone,
+                        Seven Pounds
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+              </div> -->
+            </div>
+
+          </div>
+</div>

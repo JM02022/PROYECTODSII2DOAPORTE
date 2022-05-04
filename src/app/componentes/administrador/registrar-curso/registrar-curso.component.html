@@ -1,0 +1,35 @@
+<div class="row m-0">
+    <div class="col-1 p-0">
+        <app-sidebar></app-sidebar>
+    </div>
+    <div class="col-11 p-0">
+        <div class="container">
+            <h1>LOS CURSOS</h1>
+            <!--hACEMOS VARIAS TARJETAS PARA LOS CURSOS-->
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div *ngFor="let elemento of listaCursos; index as i" class="col">
+                    <div class="card">
+                        <img src="{{elemento.imagen}}" class="card-img-top" alt="matematicas">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ elemento.nombre }}</h5>
+                            <p class="card-text">{{elemento.descripcion}}</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <h1>AGREGAR UN CURSO NUEVO</h1>
+            <div class="row mb-5">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Codigo del curso" aria-label="Codigo del curso">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Nombre del curso" aria-label="Nombre del curso">
+                </div>
+                <div class="col">
+                    <button>AGREGAR CURSO</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
