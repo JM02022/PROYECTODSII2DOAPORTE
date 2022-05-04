@@ -10,11 +10,25 @@ import { cursos } from '../../../interfaces/baseDatos'
 export class RegistrarCursoComponent implements OnInit {
 
   listaCursos: Curso[] = cursos;
-  
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  cursoVacio(): Curso {
+    return {
+      codigo: "",
+      nombre: "",
+      descripcion: ""
+    }
+  }
+
+  cursoAux = this.cursoVacio();
+
+  onAgregarCurso(): void {
+    this.listaCursos.push(this.cursoAux);
+    this.cursoAux = this.cursoVacio();
+  }
 
 }

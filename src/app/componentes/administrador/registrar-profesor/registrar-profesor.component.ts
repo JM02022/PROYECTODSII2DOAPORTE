@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Docente } from '../../../interfaces/docente'
 import { docentes } from '../../../interfaces/baseDatos'
+import { Form } from '@angular/forms';
 
 
 @Component({
@@ -14,5 +15,26 @@ export class RegistrarProfesorComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  listaDocentes:Docente[] = docentes;
+  // listaDocentes:Docente[] = docentes;
+  
+  
+  // docenteVacio():Docente{
+  //   return{
+  //     codigoD:"",
+  //     usuario: "",
+  //     contrasenia: "",
+  //     nombre:"",
+  //     especialidad:"",
+  //     apellidoP: "",
+  //     apellidoM: "",
+  //     celular: "",
+  //     correo:"",
+  //   }
+  // }
+
+  // docenteAux=this.docenteVacio();
+
+  // registrar(fomr: Form){
+    
+  // }
 }

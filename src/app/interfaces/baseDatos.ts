@@ -47,6 +47,8 @@ export let docentes: Docente[] = [
         codigoD: "D001",
         usuario: "Dpepe123",
         contrasenia: "pepe123",
+        correo:"pepe@gmail.com",
+        especialidad:"Matematicas",
         nombre: "Pedro",
         apellidoP: "Carrion",
         apellidoM: "Perez",
@@ -56,7 +58,9 @@ export let docentes: Docente[] = [
         codigoD: "D002",
         usuario: "Dpepe123",
         contrasenia: "pepe123",
+        correo:"pedro@gmail.com",
         nombre: "Pedro",
+        especialidad:"Historia",
         apellidoP: "Carrion",
         apellidoM: "Perez",
         celular: "987456732"

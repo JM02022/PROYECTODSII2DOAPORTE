@@ -16,4 +16,8 @@ export class ServiceAlumnoService {
   getDatosAlumnos():Alumno[]{
     return this.Alumnos;
   }
+
+  guardarNota(i:number,total:number){
+    this.Alumnos[i].nota = total;
+  }
 }

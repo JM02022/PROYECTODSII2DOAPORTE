@@ -25,6 +25,8 @@ export class LoginServiceService {
   getDatosAlumno(): Alumno{
     return this.Alumnos[this.indice];
   }
-  
+  getDocentes():Docente[]{
+    return this.Docentes;
+  }
 }
 

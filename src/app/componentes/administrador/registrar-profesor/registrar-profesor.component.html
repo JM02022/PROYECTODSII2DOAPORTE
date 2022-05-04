@@ -1,3 +1,4 @@
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 <div class="row m-0">
   <div class="col-1 p-0">
     <app-sidebar></app-sidebar>
@@ -40,9 +41,9 @@
             <td>{{ elementos.apellidoP }}</td>
             <td>{{ elementos.celular }}</td>
             <td><button type="button" class="btn btn-outline-danger btn-lg" ><i class="bi bi-trash3-fill"></i></button></td>
-            <!-- <td><button type="button" class="btn btn-outline-primary btn-lg" ><i class="bi bi-pencil-square"></i></button></td>  
+             <td><button type="button" class="btn btn-outline-primary btn-lg" ><i class="bi bi-pencil-square"></i></button></td>  
             <td><button type="button" class="btn btn-warning"><i class="bi bi-person-plus-fill"></i></button></td> -->
-          </tr>
+          <!-- </tr>
         </tbody>
       </table>
       </div>
@@ -90,7 +91,7 @@
       </div>
       <div class="col-md-3">
         <label for="validationCustom04" class="form-label">Especialidad</label>
-        <select class="form-select" id="validationCustom04" >
+        <select class="form-select" id="validationCustom04" required [(ngModel)]="docenteAux.especialidad">
           <option>Matematicas</option>
           <option>Historia</option>
           <option>Comunicacion</option>
@@ -104,29 +105,29 @@
       </div>
       <div class="col-md-3">
         <label for="validationCustom05" class="form-label">Celular</label>
-        <input type="number" class="form-control" id="validationCustom05" >
+       <input type="number" class="form-control" id="validationCustom05" required [(ngModel)]="docenteAux.celular"> -->
         <!-- <input type="number" class="form-control" id="validationCustom05" required [(ngModel)]="alumno.edad"> -->
-        <div class="invalid-feedback">
+        <!-- <div class="invalid-feedback">
           Completar
         </div>
       </div>
       <div class="col-md-3">
         <label for="validationCustom05" class="form-label">Direcciòn</label>
-        <input type="text" class="form-control" id="validationCustom05" >
+        <input type="text" class="form-control" id="validationCustom05" > -->
         <!-- <input type="text" class="form-control" id="validationCustom05" required [(ngModel)]="alumno.fechaN"> -->
-        <div class="invalid-feedback">
+        <!-- <div class="invalid-feedback">
           Completar
         </div>
       </div>
       <div class="col-12">
-        <div class="col-12">
+        <div class="col-12"> -->
           <!-- <button type="button" class="btn btn-primary" (click)="onAgregar()">Resgistrar</button> -->
-          <button type="button" class="btn btn-primary text-center">Registrar</button>
-        </div>
+          <!-- <button type="button" class="btn btn-primary text-center"(click)="onAgregar()">Registrar</button> -->
+        <!-- </div>
       </div>
     </div> 
 
     </div>
     
-  </div>
+  </div> -->
 
